@@ -1,0 +1,89 @@
+// HDetail Page 1
+section
+    .container.py-4.pt-lg-4.pb-lg-4.px-4.px-md-0
+        .row.d-flex.align-items-center
+            .col-12
+                nav.breadcrumb-wrapper(aria-label="breadcrumb")
+                    ol.breadcrumb.overflow-hidden.fs-7.mb-0
+                        li.breadcrumb-item
+                            a.text-primary(href=baseURL+'negara/')
+                                | Negara Tujuan
+                        li.breadcrumb-item
+                            a.text-primary(href=baseURL+'negara/hongkong/') Hongkong
+
+                        li.breadcrumb-item.active.text-truncate(aria-current='page') Tata Cara Pengiriman Uang ke Indonesia
+section
+  .container.py-4.pt-lg-4.pb-lg-4.px-4.px-md-0
+    .row.d-flex.align-items-center
+        
+        .col-12.bg-pmi-neutral-50.rounded-3
+            .p-4.text-center
+                a.fs-8.d-block.d-lg-none(href=baseURL+"negara/hongkong/") 
+                    i.bi.bi-arrow-left.me-2
+                    | Kembali
+                h1.h2 Tata Cara Pengiriman Uang ke Indonesia
+                h6.mb-0.text-secondary dari Hongkong
+
+section 
+    .container.pb-4.pb-lg-5.px-4.px-md-0
+        .row
+            aside.jari-sidebar-nav.col-lg-3.mb-4
+                nav.pmi-scrollspy-nav 
+                    ol
+                        li 
+                            a(href="#CaraKirimUang") Tata Cara Pengiriman Uang Melalui Aplikasi Entitas
+                        
+                        li 
+                            a(href="#SLAUangSampai") SLA (Service Level Agreement) Terkait Uang Sampai
+
+                        li 
+                            a(href="#Biaya") Biaya yang Diperlukan
+
+                        li 
+                            a(href="#Lokasi") Tempat & Lokasi
+
+                        li 
+                            a(href="#DownloadAplikasi") Download Aplikasi Entitas
+
+            article.jari-sidebar-content.col-lg-9.content-article
+                section#CaraKirimUang.pmi-scrollspy-content
+                    h4 Tata Cara Pengiriman Uang Melalui Aplikasi Entitas
+                    img.mw-100.my-3(src=baseURL+"img/img-queue-people.svg", alt="")
+                    
+                    //- Load sample paragraph
+                    include ../../includes/sample_lorem_ipsum.pug
+                    hr
+                
+                section#SLAUangSampai.pmi-scrollspy-content
+                    h4 SLA (Service Level Agreement) Terkait Uang Sampai
+                    img.mw-100.my-3(src=baseURL+"img/img-queue-people.svg", alt="")
+
+                    //- Load sample paragraph
+                    include ../../includes/sample_lorem_ipsum.pug
+
+                    hr
+
+                section#Biaya.pmi-scrollspy-content
+                    h4 Biaya yang Diperlukan
+                    img.mw-100.my-3(src=baseURL+"img/img-queue-people.svg", alt="")
+
+                    //- Load sample paragraph
+                    include ../../includes/sample_lorem_ipsum.pug
+                    hr
+
+                section#Lokasi.pmi-scrollspy-content
+                    h4 Tempat & Lokasi
+                    img.mw-100.my-3(src=baseURL+"img/img-queue-people.svg", alt="")
+
+                    //- Load sample paragraph
+                    include ../../includes/sample_lorem_ipsum.pug
+                    hr
+
+                section#DownloadAplikasi.pmi-scrollspy-content
+                    h4 Download Aplikasi Entitas
+                    img.mw-100.my-3(src=baseURL+"img/img-queue-people.svg", alt="")
+
+                    //- Load sample paragraph
+                    include ../../includes/sample_lorem_ipsum.pug
+
+
